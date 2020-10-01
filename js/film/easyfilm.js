@@ -55,7 +55,7 @@ getNewQuestion = () => {
     if(availableQuestions == 0 | questionCounter >= MAX_QUESTIONS) {
         localStorage.setItem("mostRecentScore", score);
         //Go To Game Over Screen
-        return window.location.assign('../../html/end.html')
+        return window.location.assign('../html/end.html')
     }
 
     questionCounter++;
