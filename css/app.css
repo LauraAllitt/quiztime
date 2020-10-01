@@ -1,0 +1,142 @@
+:root {
+    background-color: rgb(163, 228, 228);
+    font-size: 62.5%;
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Nanum Gothic', sans-serif;
+    padding: 0;
+    margin: 0;
+    color: #3f3e3e;
+}
+
+/* Typography */
+
+h1, h2, h3, h4 {
+    margin-bottom: 1rem;
+}
+
+h1 {
+    font-size: 5.4rem;
+    color: #116de6;
+    margin-bottom: 5rem;
+}
+
+h1 > span {
+    font-size: 2.4rem;
+    font-weight: 500;
+}
+
+h2 {
+    font-size: 4.2rem;
+    margin-bottom: 4rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.8rem;
+    font-weight: 500;
+    margin-bottom: 4rem;
+}
+
+/* Global Properties */
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.container > * {
+    width: 100%;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-center {
+    justify-content: center;
+    align-items: center;
+}
+
+.justify-center {
+    justify-content: center;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.hidden {
+    display: none;
+}
+
+#diff_selection {
+    display: none;
+}
+
+.options {
+    text-align: center;
+    display: inline-block;
+    justify-content: space-around;
+}
+
+/* Button Properties */
+
+.btn {
+    font-size: 1.8rem;
+    width: 200px;
+    height: 50px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    padding: 0%;
+    display: inline-block;
+    line-height: 50px;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    border: 0.1rem solid #116de6;
+    text-decoration: none;
+    color: #116de6;
+    background-color: white;
+}
+
+.btn:hover {
+    cursor: pointer;
+    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    transform: translateY(-0.1rem);
+    transition: transform 150ms;
+}
+
+.btn[disabled]:hover {
+    cursor: not-allowed;
+    box-shadow: none;
+    transform: none;
+}
+
+.easy {
+    background-color: rgb(79, 216, 79);
+    color: white;
+    border: 2px solid black;
+}
+
+.medium {
+    background-color: orange;
+    color: white;
+    border: 2px solid black;
+}
+
+.hard {
+    background-color: red;
+    color: white;
+    border: 2px solid black;
+}

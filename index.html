@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="../../css/app.css"/>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet"/>
+    <link rel="icon" href="img/question_mark.png"/>
+    <title>Quiz Time!</title>
+</head>
+    <body>
+        <div class="container">
+            <div id="home" class="flex-center flex-column">
+                    <h1>Quiz Time!</h1>
+                    <h3>Select a category.</h3>
+                <div class="options flex-center flex-column">
+                    <input type="submit" class="btn cat" id="gk" onclick="categorySelected()" value="General Knowledge"/>
+                    <input type="submit" class="btn cat" id="games" onclick="categorySelected()" value="Video Games"/>
+                    <input type="submit" class="btn cat" id="film" onclick="categorySelected()" value="Film"/>
+                    <input type="submit" class="btn cat" id="music" onclick="categorySelected()" value="Music"/>
+                    <input type="submit" class="btn cat" id="science" onclick="categorySelected()" value="Science & Nature"/>
+                    <input type="submit" class="btn cat" id="sports" onclick="categorySelected()" value="Sports"/>
+                    <input type="submit" class="btn cat" id="geo" onclick="categorySelected()" value="Geography"/>
+                    <input type="submit" class="btn cat" id="hist" onclick="categorySelected()" value="History"/>
+                </div>
+                <div id="diff_selection">
+                    <h3 class="flex-center flex-column">Select a difficulty.</h3>
+                    <input type="submit" class="options btn easy" id="easy" onclick="diffSelection()" value="Easy"/>
+                    <input type="submit" class="options btn medium" id="medium" onclick="diffSelection()" value="Medium"/>
+                    <input type="submit" class="options btn hard" id="hard" onclick="diffSelection()" value="Hard"/>
+                </div>          
+            </div>
+        </div> 
+        <script src="../../js/mainmenu/options.js"></script>   
+    </body>
+</html>
