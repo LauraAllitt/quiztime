@@ -1,5 +1,6 @@
 :root {
-    background-color: rgb(163, 228, 228);
+    background: rgb(82,82,209);
+background: linear-gradient(29deg, rgba(82,82,209,1) 0%, rgba(125,119,228,1) 54%, rgba(0,212,255,1) 100%);
     font-size: 62.5%;
 }
 
@@ -19,7 +20,7 @@ h1, h2, h3, h4 {
 
 h1 {
     font-size: 5.4rem;
-    color: #116de6;
+    color: #ffffff;
     margin-bottom: 5rem;
 }
 
@@ -38,6 +39,7 @@ h3 {
     font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 4rem;
+    color: #ffffff;
 }
 
 /* Global Properties */
@@ -104,15 +106,16 @@ h3 {
     text-align: center;
     align-items: center;
     justify-content: center;
-    border: 0.1rem solid #116de6;
+    border: 2px solid #116de6;
     text-decoration: none;
     color: #116de6;
     background-color: white;
+    border-radius: 10rem;
 }
 
 .btn:hover {
     cursor: pointer;
-    box-shadow: 0 0.4rem 1.4rem 0 rgba(86, 185, 235, 0.5);
+    box-shadow: 0 0.4rem 1.5rem 0 rgb(255, 255, 255);
     transform: translateY(-0.1rem);
     transition: transform 150ms;
 }
@@ -124,19 +127,19 @@ h3 {
 }
 
 .easy {
-    background-color: rgb(79, 216, 79);
+    background-color: rgb(37, 175, 37);
     color: white;
-    border: 2px solid black;
+    border: 2px solid #116de6;
 }
 
 .medium {
-    background-color: orange;
+    background-color: rgb(253, 136, 1);
     color: white;
-    border: 2px solid black;
+    border: 2px solid #116de6;
 }
 
 .hard {
-    background-color: red;
+    background-color: rgb(223, 33, 33);
     color: white;
-    border: 2px solid black;
+    border: 2px solid #116de6;
 }
