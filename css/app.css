@@ -33,12 +33,17 @@ h2 {
     font-size: 4.2rem;
     margin-bottom: 4rem;
     font-weight: 700;
+    color: #ffffff;
 }
 
 h3 {
     font-size: 2.8rem;
     font-weight: 500;
     margin-bottom: 4rem;
+    color: #ffffff;
+}
+
+p {
     color: #ffffff;
 }
 
