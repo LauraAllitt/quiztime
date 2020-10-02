@@ -2,9 +2,10 @@ const category = document.getElementsByClassName("cat");
 const easyButton = document.getElementById("easy");
 const mediumButton = document.getElementById("medium");
 const hardButton = document.getElementById("hard");
+const diffs = document.getElementById("diff_selection");
 
 function categorySelected() {
-    document.getElementById("diff_selection").style.display = "block";
+    diffs.style.display = "block";
     chosenTopic = event.srcElement.id;
     for(var i = 0; i < category.length; i++) {
         category[i].disabled = true;
