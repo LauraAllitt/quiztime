@@ -17,7 +17,6 @@ fetch("https://opentdb.com/api.php?amount=10&category=15&difficulty=easy&type=mu
     .then( res => {
         return res.json();
     }).then(loadedQuestions => {
-        console.log(loadedQuestions.results);
         questions = loadedQuestions.results.map( loadedQuestion => {
             const formattedQuestion = {
                 question: loadedQuestion.question
@@ -44,7 +43,6 @@ startGame = () => {
     questionCounter = 0;
     score = 0;
     availableQuestions = [... questions];
-    console.log(availableQuestions);
     getNewQuestion();
     game.classList.remove("hidden");
     loader.classList.add("hidden");
